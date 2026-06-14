@@ -1,8 +1,6 @@
 # 📚 flutter-open-library — Projeto de POO (Flutter)
 
-Aplicativo de busca e exploração de livros que consome a [Open Library API](https://openlibrary.org), desenvolvido como projeto da disciplina de Programação Orientada a Objetos na UFRN.
-
-A identidade visual é inspirada em um layout estilo "Coffee Shop" (tons quentes, bordas arredondadas), aplicada ao domínio de livros.
+Aplicativo de busca e exploração de livros que consome a [Open Library API](https://openlibrary.org), desenvolvido como projeto da disciplina de Programação Orientada a Objetos.
 
 ---
 
@@ -156,22 +154,6 @@ lib/
         ├── subject_chip.dart
         └── app_bottom_nav.dart
 
-docs/
-├── receita_01.md    # Construção de objetos de interface gráfica
-├── receita_02.md    # Classes e Herança no Contexto de Interfaces Gráficas
-├── receita_03.md    # Herança à moda moderna: funções de alta ordem
-├── receita_04.md    # Objetos JSON
-├── receita_05.md    # Gerência de Estados #1
-├── receita_06.md    # Gerência de Estados #2
-├── receita_07.md    # Programação Assíncrona #1
-├── receita_08.md    # Programação Assíncrona #2
-├── receita_08a.md   # Programação Assíncrona #3 — Infinite Scroll
-├── receita_09.md    # Restrições de Visibilidade de Atributos
-└── receita_09a.md   # Gerência de Rotas
 ```
 
 ---
-
-## 👤 Autor
-
-Projeto desenvolvido por **Elisson** — UFRN, disciplina de Programação Orientada a Objetos.
