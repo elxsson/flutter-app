@@ -79,13 +79,23 @@ git clone <URL_DO_REPOSITORIO>
 cd book_finder_app
 ```
 
-### 3. Instalar as dependências
+### 3. Gerar pastas das plataformas
+
+O projeto foi iniciado sem as pastas `android/`, `ios/` etc. Execute o comando abaixo para criá-las:
+
+```bash
+flutter create --platforms=android .
+```
+
+Isso cria a estrutura necessária para compilar o APK sem sobrescrever o código existente.
+
+### 4. Instalar as dependências
 
 ```bash
 flutter pub get
 ```
 
-### 4. Rodar o app
+### 5. Rodar o app
 
 ```bash
 flutter run
@@ -155,5 +165,49 @@ lib/
         └── app_bottom_nav.dart
 
 ```
+
+---
+
+## 📱 Gerar APK para celular (Android)
+
+Siga os passos abaixo após ter o repositório clonado e as plataformas já geradas.
+
+### 1. Verificar o ambiente
+
+```bash
+flutter doctor
+```
+
+Certifique-se de que o **Android SDK** está instalado e aparece como OK. Se não estiver, instale o [Android Studio](https://developer.android.com/studio) e configure o SDK Manager.
+
+### 2. Build do APK (debug)
+
+```bash
+flutter build apk --debug
+```
+
+O APK será gerado em:
+
+```
+build/app/outputs/flutter-apk/app-debug.apk
+```
+
+### 3. Instalar no celular
+
+Conecte o celular via USB com **depuração USB** ativada e execute:
+
+```bash
+flutter install
+```
+
+### APK release (assinado)
+
+Para distribuir o app, gere uma versão release:
+
+```bash
+flutter build apk --release
+```
+
+> O APK release exige uma **keystore** configurada. Veja o guia oficial: https://docs.flutter.dev/deployment/android#signing-the-app
 
 ---
