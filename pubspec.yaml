@@ -1,0 +1,21 @@
+name: book_finder_app
+description: Book Finder App — Open Library API
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_hooks: ^0.20.5
+  get: ^4.7.3
+  http: ^1.2.1
+  cached_network_image: ^3.3.1
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
